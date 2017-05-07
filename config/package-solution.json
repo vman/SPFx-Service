@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "list-service-demo-client-side-solution",
+    "id": "633bc2e3-0849-45d5-b2cc-b2aa99cef6cc",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/list-service-demo.sppkg"
+  }
+}
