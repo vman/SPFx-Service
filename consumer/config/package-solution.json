@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "consumer-client-side-solution",
+    "id": "f5d008d9-bab0-4214-a6a2-f180cc50cf51",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/consumer.sppkg"
+  }
+}

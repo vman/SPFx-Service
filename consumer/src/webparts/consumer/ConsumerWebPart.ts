@@ -7,12 +7,9 @@ import {
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './Consumer.module.scss';
-import * as strings from 'consumerStrings';
 import { IConsumerWebPartProps } from './IConsumerWebPartProps';
 
-//Custom Imports
-import { IListService } from '../../interfaces';
-import { ListService } from '../../services';
+import  { IListService, ListService } from 'list-service-demo';
 
 export default class ConsumerWebPart extends BaseClientSideWebPart<IConsumerWebPartProps> {
 
@@ -35,7 +32,7 @@ export default class ConsumerWebPart extends BaseClientSideWebPart<IConsumerWebP
         </div>
       </div>`;
 
-      this._listServiceInstance = this.context.serviceScope.consume(ListService.serviceKey);
+      this._listServiceInstance = this.context.serviceScope.consume(ListService.serviceKey as any) as IListService;
       
       this.getData();
   }
@@ -54,27 +51,5 @@ export default class ConsumerWebPart extends BaseClientSideWebPart<IConsumerWebP
 
   protected get dataVersion(): Version {
     return Version.parse('1.0');
-  }
-
-  protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {
-    return {
-      pages: [
-        {
-          header: {
-            description: strings.PropertyPaneDescription
-          },
-          groups: [
-            {
-              groupName: strings.BasicGroupName,
-              groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
-                })
-              ]
-            }
-          ]
-        }
-      ]
-    };
   }
 }

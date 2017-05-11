@@ -1,0 +1,11 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/services/ListService.js",
+      "manifest": "./src/ListService.manifest.json",
+      "outputPath": "./dist/ListService.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {}
+}

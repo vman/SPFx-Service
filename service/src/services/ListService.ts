@@ -1,4 +1,4 @@
-import { IListService } from '../interfaces';
+import { IListService } from '../index';
 import { ServiceKey, ServiceScope } from '@microsoft/sp-core-library';
 import { SPHttpClient, SPHttpClientResponse } from '@microsoft/sp-http';
 import { PageContext } from '@microsoft/sp-page-context';
