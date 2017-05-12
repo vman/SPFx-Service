@@ -40,4 +40,4 @@ Run your SPFx webpart in the workbench:
 
 When you add the webpart to the workbench, you should see that there are 2 js files loaded on the page:
 
-![SPFx files](/images/files.png)
+![SPFx files](images/files.PNG)
