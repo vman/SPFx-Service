@@ -39,3 +39,5 @@ Run your SPFx webpart in the workbench:
 `gulp serve`
 
 When you add the webpart to the workbench, you should see that there are 2 js files loaded on the page:
+
+![SPFx files](/images/files.png)
